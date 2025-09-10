@@ -1,19 +1,14 @@
-# hacerperrofeliz
 class Perro:
     def __init__(self, edad, nombre, color_ojos):
         self.edad = edad
         self.nombre = nombre
         self.color_ojos = color_ojos
-
-     
         self.acariciado = False
         self.alimentado = False
         self.paseado = False
-
     def acariciar(self):
         self.acariciado = True
         print(f"Acariciando a {self.nombre}")
-
     def pasear(self):
         self.paseado = True
         print(f"{self.nombre} está paseando!")
@@ -21,9 +16,8 @@ class Perro:
     def alimentar(self):
         self.alimentado = True
         print(f"Alimentando a {self.nombre}")
-
     def hacer_feliz(self):
-        if self.acariciado and self.alimentado and self.ladrado:
+        if self.acariciado and self.alimentado and self.paseado:
             print(f"{self.nombre} está feliz!")
         else:
             print(f"{self.nombre} no está feliz aún.")
